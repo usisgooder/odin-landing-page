@@ -4,19 +4,42 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+  }
+
+button {
+    border-radius: 8px;
+    padding: 7px 18px;
+    background-color: #3882f6;
+    color: white;
+    border: none;
 }
 
 .hero {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     background-color: #1f2937;
     color: white;
+    margin: 0 0;
+    padding: 0 0;
 }
 
-/* .hero > * {
-    width: 100%;
-} */
+.hero > * {
+    margin: 0px 0px;
+}
 
 .header {
     display: flex;
@@ -39,6 +62,10 @@ body {
     flex-direction: row;
 }
 
+.right-links li {
+    margin: 10px 10px 10px 10px;
+}
+
 .welcome-section {
     display: flex;
     flex-direction: row;
@@ -52,7 +79,7 @@ body {
 }
 
 .signup li {
-    margin: 0 0 5px 0;
+    margin: 10px 10px 5px 10px;
 }
 
 .hero-main {
@@ -72,24 +99,88 @@ body {
 }
 
 /* content css */
-
-li {
-    margin: 10px;
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-ul {
-    list-style: none;
+.content > * {
+    padding: 35px;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-  }
+.info {
+    flex: 1;
+}
 
-button {
+.info-text {
+    margin: 45px 0;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    text-align: center;
+}
+
+.info-cards {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;;
+}
+
+.info-cards li {
+    width: 100px;
+    margin: 0 50px;
+}
+
+.card {
+    border: 3px solid #3882f6;
     border-radius: 8px;
-    padding: 7px 18px;
-    background-color: #3882f6;
-    color: white;
-    border: none;
+    height: 100px;
+    width: 100px;
 }
+
+.card-text {
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+/* quote */
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    color: #1F2937;
+    padding: 100px 25%;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quote-author {
+    font-weight: bold;
+    text-align: right;
+    font-size: 18px;
+}
+
+
+
+/* footer css */
+
+.footer {
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
+    color: #f9faf8;
+  }
