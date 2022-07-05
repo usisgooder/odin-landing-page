@@ -154,7 +154,7 @@ button {
     flex-direction: column;
     background-color: #e5e7eb;
     color: #1F2937;
-    padding: 100px 25%;
+    padding: 100px 29%;
 }
 
 .quote-text {
@@ -166,6 +166,34 @@ button {
     font-weight: bold;
     text-align: right;
     font-size: 18px;
+}
+
+/* action */
+
+.action {
+    display: flex;
+    justify-content: center;
+}
+
+.action-box {
+    background-color: #3882f6;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    margin: 45px 20%;
+    padding: 50px 5%;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.action-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.action-button {
+    border: 2px solid white;
 }
 
 
