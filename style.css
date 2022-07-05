@@ -69,8 +69,9 @@ button {
 .welcome-section {
     display: flex;
     flex-direction: row;
-    margin: 60px auto;
-    justify-content: center;
+    margin: 45px 20%;
+    justify-content: space-evenly;
+    flex: 1;
 }
 
 .signup {
@@ -194,6 +195,7 @@ button {
 
 .action-button {
     border: 2px solid white;
+    width: 150px;
 }
 
 
